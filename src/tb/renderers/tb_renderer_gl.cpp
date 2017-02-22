@@ -107,6 +107,8 @@ void TBRendererGL::BeginPaint(int render_target_w, int render_target_h)
 	glLoadIdentity();
 	Ortho2D(0, (GLfloat)render_target_w, (GLfloat)render_target_h, 0);
 	glMatrixMode(GL_MODELVIEW);
+	glClear(GL_COLOR_BUFFER_BIT);
+	glClearColor(0.25, 0.25, 0.4,1.0);
 	glViewport(0, 0, render_target_w, render_target_h);
 	glScissor(0, 0, render_target_w, render_target_h);
 
