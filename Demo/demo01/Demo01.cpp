@@ -886,10 +886,10 @@ void DemoApplication::OnBackendAttached(AppBackend *backend, int width, int heig
 	// Render some glyphs in one go now since we know we are going to use them. It would work fine
 	// without this since glyphs are rendered when needed, but with some extra updating of the glyph bitmap.
 	if (font)
-		font->RenderGlyphs(" !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~•·åäöÅÄÖ");
+		font->RenderGlyphs(" !\"#$%&'()*+,-./0123456789:;<=>?@ABCDEFGHIJKLMNOPQRSTUVWXYZ[\\]^_`abcdefghijklmnopqrstuvwxyz{|}~*·åäöÅÄÖ");
 
 	// Give the root widget a background skin
-	m_root.SetSkinBg(TBIDC("background"));
+	//m_root.SetSkinBg(TBIDC("background"));
 }
 
 App *app_create() {
